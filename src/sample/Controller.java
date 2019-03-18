@@ -62,22 +62,22 @@ public class Controller {
 
 	public void initialize() {
 
-		TranslateTransition translateTransition = new TranslateTransition(
+		FadeTransition fadeTransition = new FadeTransition(
 				Duration.seconds(0.2), logoLabel);
-		translateTransition.setByY(800);
-		translateTransition.play();
+		fadeTransition.setByValue(3.5);
+		fadeTransition.play();
 
-		TranslateTransition translateTransition0 = new TranslateTransition(
+		FadeTransition fadeTransition0 = new FadeTransition(
 				Duration.seconds(0.1), nameLabel);
-		translateTransition0.setByY(650);
-		translateTransition0.play();
+		fadeTransition0.setByValue(3.5);
+		fadeTransition0.play();
 
-		TranslateTransition translateTransition00 = new TranslateTransition(
+		FadeTransition fadeTransition00 = new FadeTransition(
 				Duration.seconds(0.1), helloLabel);
-		translateTransition00.setByY(800);
-		translateTransition00.play();
+		fadeTransition00.setByValue(3.5);
+		fadeTransition00.play();
 
-		translateTransition
+		fadeTransition
 				.setOnFinished(event -> {
 					
 					
